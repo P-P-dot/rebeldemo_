@@ -167,8 +167,8 @@ const App = () => {
         </button>
 
         <div className="footer">
-          <p className="description"></p>
-          <p className="contact"></p>
+          <p className="description">-</p>
+          <p className="contact">-</p>
         </div>
       </div>
     </div>
