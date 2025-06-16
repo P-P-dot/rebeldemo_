@@ -105,13 +105,13 @@ const App = () => {
   const getStatusText = () => {
     switch (callStatus) {
       case "connecting":
-        return "Conectando"
+        return "Connecting..."
       case "active":
-        return "Llamada Activa"
+        return "Call Active"
       case "ended":
-        return "Terminada"
+        return "Call Ended"
       default:
-        return "Llamar"
+        return "Ready to Connect"
     }
   }
 
@@ -131,7 +131,7 @@ const App = () => {
   return (
     <div className="app-container">
       <div className="content">
-        <h1 className="title">Habla con tu tutor Rebel</h1>
+        <h1 className="title">Customer Service Agent</h1>
 
         <div className="status-container">
           <div className="status-dot" style={{ backgroundColor: getStatusColor() }}></div>
@@ -167,8 +167,8 @@ const App = () => {
         </button>
 
         <div className="footer">
-          <p className="description">-</p>
-          <p className="contact">-</p>
+          <p className="description">AI-powered customer service available 24/7</p>
+          <p className="contact">support@yourcompany.com</p>
         </div>
       </div>
     </div>
